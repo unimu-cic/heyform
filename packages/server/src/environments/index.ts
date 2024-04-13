@@ -129,3 +129,5 @@ export const ACCOUNT_DELETION_SCHEDULE_INTERVAL: string =
 
 // Unsplash
 export const UNSPLASH_CLIENT_ID: string = process.env.UNSPLASH_CLIENT_ID
+
+export const DOMAIN_WHITE_LIST: string = process.env.DOMAIN_WHITE_LIST
