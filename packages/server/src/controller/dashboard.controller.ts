@@ -20,6 +20,8 @@ export class DashboardController {
 		let origin = req.get('origin');
 		let xFrameOptionsValue = 'SAMEORIGIN';
 		const whiteList = DOMAIN_WHITE_LIST?.split(',')
+		console.log('DashboardController-origin', origin)
+		console.log('DashboardController-whiteList', whiteList)
 
 		if (whiteList.includes(origin)) {
 			xFrameOptionsValue = `ALLOW-FROM ${origin}`;
